@@ -27,7 +27,7 @@ import Alert from "./components/Alert";
 function App() {
   return (
     <div>
-      <Alert />
+      <Alert text="hello world" />
     </div>
   );
 }
