@@ -23,13 +23,33 @@
 
 // export default App;
 
-import Alert from "./components/Alert";
+//partie alerte
+// import Alert from "./components/Alert";
+// function App() {
+//   return (
+//     <div>
+//       <Alert>
+//         hello <span>work</span>
+//       </Alert>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+//partie Button
+import Button from "./components/Button";
 function App() {
   return (
     <div>
-      <Alert>
-        hello <span>work</span>
-      </Alert>
+      <Button
+        color="danger"
+        onClick={() => {
+          console.log("test clicked");
+        }}
+      >
+        My button test
+      </Button>
     </div>
   );
 }
