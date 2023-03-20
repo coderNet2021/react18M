@@ -38,14 +38,21 @@
 // export default App;
 
 //partie Button
+import { useState } from "react";
+import Alert from "./components/Alert";
 import Button from "./components/Button";
 function App() {
+  const [visible, setVisibility] = useState(false);
   return (
     <div>
+      {visible && (
+        <Alert onClose={() => setVisibility(false)}>My Aldddrte</Alert>
+      )}
       <Button
         color="danger"
         onClick={() => {
           console.log("test clicked");
+          setVisibility(true);
         }}
       >
         My button test
